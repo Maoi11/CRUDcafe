@@ -14,7 +14,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 function App() {
-  const [stateUsuarioLogueado, setStateUsuarioLogueado] = useState({});
+  const usuario = JSON.parse(sessionStorage.getItem('usuarioLogueado')) || {};
+  const [stateUsuarioLogueado, setStateUsuarioLogueado] = useState(usuario);
   return (
     <>
       <BrowserRouter>
