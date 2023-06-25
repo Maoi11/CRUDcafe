@@ -1,8 +1,9 @@
 
 import { Form, Button, Container, Card } from "react-bootstrap";
-
+import { login } from "../helpers/queries";
 
 const Login = () => {
+  login();
   return (
     <Container className="mainSection">
       <Card className="my-5">
