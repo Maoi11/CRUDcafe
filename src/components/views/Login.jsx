@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = ({setStateUsuarioLogueado}) => {
   const {
     register,
     handleSubmit,
@@ -21,6 +21,7 @@ const Login = () => {
       if (respuesta) {
         sessionStorage.setItem('usuarioLogueado',JSON.stringify(respuesta));
         Swal.fire ('Bienvenido', `${respuesta.nombreUsuario}, te has logueado exitosamente.`, 'success' );
+        setStateUsuarioLogueado(respuesta);
         //redireccionar a admin
         navegacion('/administrador');
 
