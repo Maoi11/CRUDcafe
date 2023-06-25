@@ -12,8 +12,8 @@ const Login = () => {
 
   //funcion que se ejecuta despues que se produzca el handleSubmit en la libreria
   // usuario es el nombre que tendra el objeto que se cree con el handle submit
-  const onSubmit = (usuario) => {
-    console.log(usuario);
+  const onSubmit = (usuarioLogueado) => {
+    console.log(usuarioLogueado);
 
     login();
   };
