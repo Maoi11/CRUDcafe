@@ -8,6 +8,8 @@ import DetalleProducto from "./components/views/DetalleProducto";
 import CrearProducto from "./components/views/producto/CrearProducto";
 import EditarProducto from "./components/views/producto/EditarProducto";
 import Administrador from "./components/views/Administrador";
+import Login from "./components/views/Login";
+
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
       {/* <DetalleProducto></DetalleProducto> */}
       {/* <CrearProducto></CrearProducto> */}
       {/* <EditarProducto></EditarProducto> */}
-      <Administrador></Administrador>
+      {/* <Administrador></Administrador> */}
+      <Login></Login>
       <Footer></Footer>
     </>
   );
