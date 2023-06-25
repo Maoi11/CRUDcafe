@@ -5,7 +5,7 @@ const Menu = ({ stateUsuarioLogueado, setStateUsuarioLogueado }) => {
   const navegacion = useNavigate();
   const logout = ()=> {
     setStateUsuarioLogueado({});
-    sessionStorage.removeItem('usuario');
+    sessionStorage.removeItem('usuarioLogueado');
     navegacion('/');
 
   }
